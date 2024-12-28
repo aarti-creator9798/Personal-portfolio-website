@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Aarti D. Gawande</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #success-message {
+            display: none;
+            color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Aarti D. Gawande</div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="contact">
+        <div class="container">
+            <h1 class="section-title">Contact Me</h1>
+            <div class="contact-layout">
+                <div class="contact-method">
+                    <img src="email.png" alt="Email Icon">
+                    <p>Email: <a href="mailto:aartigawande9922@gmail.com">aartigawande9922@gmail.com</a></p>
+                </div>
+                <div class="contact-method">
+                    <img src="linkedin.png" alt="LinkedIn Icon">
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/aarti-gawande-15417533a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn Profile</a></p>
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+
+                <p id="success-message">Your form is submitted!</p>           
+            </form>
+        </div>
+    </section>
+    <script>
+        // JavaScript to handle form submission
+        const form = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            successMessage.style.display = 'block'; // Show the success message
+            form.reset(); // Clear the form fields
+        });
+    </script>
+</body>
+</html>

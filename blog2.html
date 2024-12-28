@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Common Mistakes New Front-End Developers Make</title>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #0b0b0b;
+        }
+
+        header {
+            background: #c8a8a8;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+    
+        }
+        header h1 {
+            margin: 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: #fff;
+            box-shadow: 0 2px 4px rgba(9, 10, 11, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #444;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin: 1rem 0;
+        }
+
+        strong {
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="experience.html">Expereince</a>
+                <a href="projects.html">Projects</a>
+                <a href="blogs.html">Blogs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+         
+    
+</head>
+<body>
+
+    <main>
+        <h1>10 Common Mistakes New Front-End Developers Make</h1>
+
+        <p>
+            Becoming a front-end developer can be an exciting yet challenging journey. Along the way, it’s easy to fall into some common traps that can slow your progress. Here are ten mistakes new front-end developers often make and tips to avoid them.
+        </p>
+
+        <h2>1. Neglecting Semantic HTML</h2>
+        <p><strong>The Mistake:</strong> Using generic <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> elements everywhere without considering semantic elements like <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code>.</p>
+        <p><strong>Why It’s a Problem:</strong> Semantic HTML improves accessibility and SEO and makes your code easier to read.</p>
+        <p><strong>How to Avoid It:</strong> Learn the purpose of semantic tags and use them where appropriate. For instance, use <code>&lt;nav&gt;</code> for navigation and <code>&lt;main&gt;</code> for the main content.</p>
+
+        <h2>2. Ignoring Responsive Design</h2>
+        <p><strong>The Mistake:</strong> Creating websites that only look good on desktops and ignoring mobile and tablet users.</p>
+        <p><strong>Why It’s a Problem:</strong> More than half of web traffic comes from mobile devices. A non-responsive site can lead to poor user experience.</p>
+        <p><strong>How to Avoid It:</strong> Use CSS media queries and frameworks like Bootstrap or Tailwind CSS to ensure your site looks good on all screen sizes.</p>
+
+        <h2>3. Overusing Inline Styles</h2>
+        <p><strong>The Mistake:</strong> Writing CSS directly in the HTML using the <code>style</code> attribute.</p>
+        <p><strong>Why It’s a Problem:</strong> Inline styles make your code harder to maintain and reuse.</p>
+        <p><strong>How to Avoid It:</strong> Keep styles in a separate CSS file or use a CSS preprocessor like SASS for better organization.</p>
+
+        <h2>4. Not Testing on Multiple Browsers</h2>
+        <p><strong>The Mistake:</strong> Assuming your website works the same on all browsers without testing.</p>
+        <p><strong>Why It’s a Problem:</strong> Different browsers interpret code differently, leading to inconsistencies.</p>
+        <p><strong>How to Avoid It:</strong> Test your site on major browsers (Chrome, Firefox, Safari, Edge) and use tools like BrowserStack for cross-browser compatibility testing.</p>
+
+        <h2>5. Hardcoding Values</h2>
+        <p><strong>The Mistake:</strong> Using fixed pixel values for everything, such as widths, heights, and font sizes.</p>
+        <p><strong>Why It’s a Problem:</strong> Hardcoded values can break your layout on different screen sizes or resolutions.</p>
+        <p><strong>How to Avoid It:</strong> Use relative units like %, em, or rem, and CSS variables for scalable designs.</p>
+
+        <h2>6. Skipping Comments in Code</h2>
+        <p><strong>The Mistake:</strong> Writing code without any comments to explain what it does.</p>
+        <p><strong>Why It’s a Problem:</strong> Code becomes difficult to understand for others (or even for yourself after some time).</p>
+        <p><strong>How to Avoid It:</strong> Use clear and concise comments to describe the purpose of complex sections of your code.</p>
+
+        <h2>7. Not Optimizing Images</h2>
+        <p><strong>The Mistake:</strong> Uploading high-resolution images without compression.</p>
+        <p><strong>Why It’s a Problem:</strong> Large images slow down your website, leading to poor performance and user experience.</p>
+        <p><strong>How to Avoid It:</strong> Use tools like TinyPNG or ImageOptim to compress images before uploading them. Consider using modern formats like WebP for better performance.</p>
+
+        <h2>8. Overlooking Accessibility</h2>
+        <p><strong>The Mistake:</strong> Ignoring accessibility features like alt attributes for images or proper contrast ratios.</p>
+        <p><strong>Why It’s a Problem:</strong> It makes your website inaccessible to people with disabilities and can hurt your reputation.</p>
+        <p><strong>How to Avoid It:</strong> Follow accessibility guidelines like WCAG. Use tools like Lighthouse or axe to test and improve your site's accessibility.</p>
+
+        <h2>9. Using Too Many Dependencies</h2>
+        <p><strong>The Mistake:</strong> Relying on multiple libraries and frameworks for simple tasks.</p>
+        <p><strong>Why It’s a Problem:</strong> It increases your site’s load time and can make debugging difficult.</p>
+        <p><strong>How to Avoid It:</strong> Only include libraries that are essential and try to implement simple functionalities using vanilla JavaScript.</p>
+
+        <h2>10. Not Version Controlling Your Code</h2>
+        <p><strong>The Mistake:</strong> Writing code without using version control systems like Git.</p>
+        <p><strong>Why It’s a Problem:</strong> Without version control, you risk losing your work or struggling to collaborate with others.</p>
+        <p><strong>How to Avoid It:</strong> Learn Git basics and use platforms like GitHub or GitLab to manage your code effectively.</p>
+
+        <h2>Final Thoughts</h2>
+        <p>
+            Making mistakes is a natural part of learning, but recognizing and addressing them early can accelerate your growth as a front-end developer. Focus on writing clean, maintainable code, and keep learning new best practices.
+        </p>
+        <p>What challenges have you faced as a front-end developer?</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Front-End Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
